@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Chat</title>  
+<style>  
+    /* 添加一些简单的样式 */  
+    body {  
+        font-family: Arial, sans-serif;  
+    }  
+    #chat-log {  
+        border: 1px solid #ccc;  
+        padding: 10px;  
+        height: 300px;  
+        overflow-y: auto;  
+    }  
+    #chat-form {  
+        margin-top: 10px;  
+    }  
+</style>  
+</head>  
+<body>  
+  
+<h1>Chat</h1>  
+  
+<div id="chat-log">  
+    <!-- 假设这是聊天记录，但在实际应用中需要动态加载 -->  
+    <p><strong>User 1:</strong> Hello, is anyone here?</p>  
+    <p><strong>User 2:</strong> Hi, I'm here!</p>  
+    <!-- ... 其他聊天记录 ... -->  
+</div>  
+  
+<div id="chat-form">  
+    <form action="submit-chat-message.php" method="post">  
+        <input type="text" name="message" placeholder="Enter your message...">  
+        <input type="submit" value="Send">  
+    </form>  
+    <!-- 注意：submit-chat-message.php 需要实际编写来处理聊天消息 -->  
+</div>  
+  
+</body>  
+</html>

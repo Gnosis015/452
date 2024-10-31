@@ -1,0 +1,119 @@
+Tony           Yan Chaoming
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+  }  
+   
+  header {  
+    background-color: #333;  
+    color: #fff;  
+    padding: 10px;  
+  }  
+    
+  header nav ul {  
+    list-style: none;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    justify-content: flex-end;  
+  }  
+    
+  header nav ul li {  
+    margin-left: 10px;  
+  }  
+    
+  header nav ul li a {  
+    color: #fff;  
+    text-decoration: none;  
+    padding: 5px 10px;  
+    border-radius: 5px;  
+    transition: background-color 0.3s ease;  
+  }  
+  
+  /*Product List Style*/
+  .product-list {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-around;/*Distribution space*/  
+    padding: 20px;  
+  }  
+    
+  /*Individual product styles*/
+  .product {  
+    flex: 0 0 calc(33.33% - 20px);  
+    margin-bottom: 20px; /*The spacing between products*/ 
+    text-align: center; 
+  } 
+  
+  
+  .center-text {  
+    text-align: center;  
+  }
+  
+  .logo img {  
+    height: 100px; /* 设置Logo的高度 */  
+    width: auto; /* 保持Logo比例 */  
+  }  
+
+  /* 产品图片样式 */  
+  .product img {  
+    width: 100%; /* 图片宽度100%填充容器 */  
+    height: auto; /* 高度自动以保持比例 */  
+    margin-bottom: 10px; /* 图片与文本之间的间距 */  
+  }  
+   
+
+  /* 其他产品元素的样式 */  
+  .product h3,  
+  .product p {  
+    margin: 0; /* 移除默认的margin */  
+    padding: 0; /* 移除默认的padding */  
+  }  
+    
+  .product p {  
+    margin-bottom: 5px; /* 描述与价格之间的间距 */  
+  }  
+    
+  /* 响应式样式 */  
+  @media (max-width: 600px) {  
+    .product-list {  
+      flex-direction: column; /* 小屏幕时改为垂直排列 */  
+    }  
+      
+    .product {  
+      flex: 1 0 auto; /* 小屏幕时自动填充宽度 */  
+      max-width: 100%;  
+    }  
+  }
+  /* 页脚样式 */  
+footer {  
+  bottom: 0; /* 底部对齐 */  
+  width: 100%; /* 宽度100% */  
+  background-color: #333; /* 背景色 */  
+  color: #fff; /* 文本颜色 */  
+  text-align: center; /* 文本居中 */  
+  padding: 10px; /* 内边距 */  
+  z-index: 1; /* 确保页脚在其他内容之下 */  
+}
+
+/* style.css */  
+  
+.text-image-container {  
+  display: flex;  
+  align-items: center; /* 垂直居中 */  
+}  
+
+.text {  
+  /* 可以设置文本宽度或其他样式 */  
+  flex: 1; /* 文本将占据剩余的空间 */  
+}  
+
+.image {  
+  /* 设定图片的宽度，高度可以自动或手动设置 */  
+  max-width: 50%; /* 假设图片最大宽度为容器宽度的一半 */  
+  height: auto; /* 根据图片原始比例自动调整高度 */  
+  margin-left: 10px; /* 可选：添加一些左边距以分隔文本和图片 */  
+}  
+
+/* 其他样式... */
